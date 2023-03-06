@@ -22,10 +22,16 @@ int main(){
     //size of is a keyword to tell us how many bites are used, is an operator not a function
     printf("sizeof(int) = %li, this shows the number of bytes not bits. If  I continue \0 writing\n\n", sizeof(a));
     // the \0 here is how strings are terminated so I will interupt the read and stop it early
+    char exampleString[] = {"Hello mate"};
+    int i = 0;
+    while (exampleString[i] != 0) {     // this works because asci for \0 is 0
+        printf("%c\n", exampleString[i]);
+        ++i;
+    }
 
 
 
-   int i = 0;
+   i = 0;
    exampleFloat= 100.2f;  // the f on the end explicitly states that it is a float
    exampleFloat = exampleFloat * 5.0f; // the f here stops example float from being propoted to a double
    exampleFloat *= 5.0f; // the above line can be written as 
@@ -34,7 +40,7 @@ int main(){
    enum mySizeVarType object1, object2;      //create the variables
    object1 = big;                            //assign values
 
-    char exampleString[] = {"Hello mate"};
+    
    bool exampleBoolean = 1; 
 
    printf("the value of the enum was; %d\n", object1);
