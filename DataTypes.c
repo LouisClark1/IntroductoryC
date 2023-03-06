@@ -16,5 +16,6 @@ int main(){
     printf("(float)12.5568 + (int)12 = %lf\n", b);
 
     //size of is a keyword to tell us how many bites are used, is an operator not a function
-    printf("sizeof(int) = %li, this shows the number of bytes not bits\n\n", sizeof(a));
+    printf("sizeof(int) = %li, this shows the number of bytes not bits. If  I continue \0 writing\n\n", sizeof(a));
+    // the \0 here is how strings are terminated so I will interupt the read and stop it early
 }
