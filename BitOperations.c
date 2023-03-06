@@ -18,6 +18,6 @@ int main(){
                     //the signed bit (-2^7 in an 8 bit number) is 1 larger than the possible positive value
 
     printf("output of the logic is %d\n", result);
-    //test test
+    
     return 0;
 }
