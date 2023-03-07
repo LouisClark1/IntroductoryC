@@ -20,7 +20,8 @@ int main(){
     printf("(float)12.5568 + (int)12 = %lf\n", b);
 
     //size of is a keyword to tell us how many bites are used, is an operator not a function
-    printf("sizeof(int) = %li, this shows the number of bytes not bits. If  I continue \0 writing\n\n", sizeof(a));
+    printf("sizeof(int) = %li, this shows the number of bytes not bits\n", sizeof(a));
+    // printf(" If  I continue \0 writing\n");
     // the \0 here is how strings are terminated so I will interupt the read and stop it early
     char exampleString[] = {"Hello mate"};
     int i = 0;
@@ -45,11 +46,11 @@ int main(){
 
    printf("the value of the enum was; %d\n", object1);
 
-//    printf("Enter a number and a word: ");
-//    char str[100];
-//    scanf("%d %s", &i, str);
+   printf("Enter a number and a word: ");
+   char str[100];
+   scanf("%d %s", &i, str); //I think scanf must be given pointers
 
-//    printf("\nYou entered: %d and %s\n", i, str); //the %d ans %s are called format specifiers
+   printf("\nYou entered: %d and %s\n", i, str); //the %d ans %s are called format specifiers
    printf("Look who it is, %s\n",exampleString);
 
 
